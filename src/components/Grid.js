@@ -4,18 +4,28 @@ import Card from "./Card";
 const someRandomVariable = 69;
 
 const Grid = (props) => {
-  const { cards, chosenCards, shuffleCards, setChosenCards, setScore, score } =
-    props;
+  const {
+    cards,
+    chosenCards,
+    shuffleCards,
+    setChosenCards,
+    setScore,
+    score,
+    setHighScore,
+    highScore,
+  } = props;
 
   const handleCardClick = (name) => {
     let chosenCardsCopy = [];
     chosenCardsCopy.push(name);
     shuffleCards();
     if (chosenCards.includes(name)) {
+      if (score > highScore) {
+        setHighScore(score);
+      }
       setScore(0);
       setChosenCards([]);
     } else if (!chosenCards.includes(name)) {
-      console.log(name);
       setScore(score + 1);
       setChosenCards(chosenCards.concat(chosenCardsCopy));
     }
@@ -34,7 +44,7 @@ const Grid = (props) => {
     });
   };
 
-  return <div className="grid">{renderCards()}</div>;
+  return <div id="gameGrid">{renderCards()}</div>;
 };
 
 export default Grid;

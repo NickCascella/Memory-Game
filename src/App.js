@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import Grid, { someRandomVariable } from "./components/Grid";
+import Grid from "./components/Grid";
 
 function App() {
   const [currentCards, setCurrentCards] = useState([
@@ -9,17 +9,46 @@ function App() {
       image: "snorlax.jpg",
     },
     {
-      name: "Test-Lucy",
-      image: "lucy.png",
+      name: "Psyduck",
+      image: "psyduck.png",
     },
     {
-      name: "Test-Icael",
+      name: "Groudon",
+      image: "groudon.jpg",
+    },
+    {
+      name: "Test-Hello",
+      image: "icael.png",
+    },
+    {
+      name: "Test-Hi",
+      image: "icael.png",
+    },
+    {
+      name: "Test-Wee",
+      image: "icael.png",
+    },
+    {
+      name: "Test-fdf",
+      image: "icael.png",
+    },
+    {
+      name: "Test-7",
+      image: "icael.png",
+    },
+    {
+      name: "Test-8",
+      image: "icael.png",
+    },
+    {
+      name: "Test-9",
       image: "icael.png",
     },
   ]);
 
   const [chosenCards, setChosenCards] = useState([]);
   const [score, setScore] = useState(0);
+  const [highScore, setHighScore] = useState(0);
 
   const shuffleCards = () => {
     setCurrentCards(shuffle(currentCards));
@@ -27,9 +56,14 @@ function App() {
 
   return (
     <div>
-      <header>Memory Game</header>
-      <div>{score}</div>
-      <div id="Grid">
+      <header>
+        <div>Pokemon Memory Game!</div>
+        <div id="scoresContainer">
+          <div id="highScore">Highscore: {highScore}</div>
+          <div id="score">Score: {score}</div>
+        </div>
+      </header>
+      <div id="appGrid">
         <Grid
           cards={currentCards}
           chosenCards={chosenCards}
@@ -37,6 +71,8 @@ function App() {
           shuffleCards={shuffleCards}
           setScore={setScore}
           score={score}
+          setHighScore={setHighScore}
+          highScore={highScore}
         />
       </div>
     </div>
