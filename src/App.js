@@ -17,32 +17,40 @@ function App() {
       image: "groudon.jpg",
     },
     {
-      name: "Test-Hello",
-      image: "icael.png",
+      name: "Darkrai",
+      image: "darkrai.jpg",
     },
     {
-      name: "Test-Hi",
-      image: "icael.png",
+      name: "Deoxys",
+      image: "deoxys.jpg",
     },
     {
-      name: "Test-Wee",
-      image: "icael.png",
+      name: "Dragonite",
+      image: "dragonite.jpg",
     },
     {
-      name: "Test-fdf",
-      image: "icael.png",
+      name: "Dugtrio",
+      image: "dugtrio.jpg",
     },
     {
-      name: "Test-7",
-      image: "icael.png",
+      name: "Gengar",
+      image: "gengar.jpeg",
     },
     {
-      name: "Test-8",
-      image: "icael.png",
+      name: "Ho-oh",
+      image: "hooh.jpg",
     },
     {
-      name: "Test-9",
-      image: "icael.png",
+      name: "Lugia",
+      image: "lugia.jpg",
+    },
+    {
+      name: "Palkia",
+      image: "palkia.jpg",
+    },
+    {
+      name: "Pikachu",
+      image: "pikachu.jpg",
     },
   ]);
 
@@ -57,7 +65,10 @@ function App() {
   return (
     <div>
       <header>
-        <div>Pokemon Memory Game!</div>
+        <div>
+          <div>Pokemon Memory Game!</div>
+          <div id="titleMessage">Try not to select the same Pokemon twice!</div>
+        </div>
         <div id="scoresContainer">
           <div id="highScore">Highscore: {highScore}</div>
           <div id="score">Score: {score}</div>
