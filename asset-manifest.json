@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Memory-Game/static/css/main.9f756069.chunk.css",
+    "main.js": "/Memory-Game/static/js/main.15cf6026.chunk.js",
+    "main.js.map": "/Memory-Game/static/js/main.15cf6026.chunk.js.map",
+    "runtime-main.js": "/Memory-Game/static/js/runtime-main.3fc61177.js",
+    "runtime-main.js.map": "/Memory-Game/static/js/runtime-main.3fc61177.js.map",
+    "static/js/2.3af3f5aa.chunk.js": "/Memory-Game/static/js/2.3af3f5aa.chunk.js",
+    "static/js/2.3af3f5aa.chunk.js.map": "/Memory-Game/static/js/2.3af3f5aa.chunk.js.map",
+    "static/js/3.41cf117a.chunk.js": "/Memory-Game/static/js/3.41cf117a.chunk.js",
+    "static/js/3.41cf117a.chunk.js.map": "/Memory-Game/static/js/3.41cf117a.chunk.js.map",
+    "index.html": "/Memory-Game/index.html",
+    "static/css/main.9f756069.chunk.css.map": "/Memory-Game/static/css/main.9f756069.chunk.css.map",
+    "static/js/2.3af3f5aa.chunk.js.LICENSE.txt": "/Memory-Game/static/js/2.3af3f5aa.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Memory-Game/static/media/pokemonMap.02e62657.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3fc61177.js",
+    "static/js/2.3af3f5aa.chunk.js",
+    "static/css/main.9f756069.chunk.css",
+    "static/js/main.15cf6026.chunk.js"
+  ]
+}
